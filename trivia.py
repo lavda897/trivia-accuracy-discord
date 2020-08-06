@@ -6,7 +6,7 @@ import asyncio
 client = commands.Bot(command_prefix= ";")  # You can change prefix like that "/","$" e.t.c..
 client.remove_command("help")
 
-@client.event()
+@client.event
 async def on_ready():
     print("logged in as:" + client.user.name)
     print("--------")
